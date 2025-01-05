@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:sans-serif;
+}
+
+body{
+    background-color: rgb(23, 22, 22);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.container{
+    width: fit-content;
+    height: fit-content;
+    padding: 20px 10px;
+    background-color: rgb(223, 224, 227);
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: 20px;
+}
+
+.task{
+    color: rgb(38, 32, 32);
+    font-size: 20px;
+}
+
+.add{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 10px;
+}
+
+.add input{
+    height: 40px;
+    width: 350px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 17px;
+    background-color: grey;
+    letter-spacing: 0.5px;
+}
+
+.add button{
+    height: 40px;
+    width: 70px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    background-color: rgb(212, 94, 94);
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: white;
+    cursor: pointer;
+}
+
+
+#list{
+    width: 100%;
+    padding: 0px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+#list #task-list{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    gap: 20px;
+}
+
+#tasks{
+    display: flex;
+    align-items: flex-start;
+    gap: 7px;
+    font-size: 17.5px;
+    text-align: justify;
+    /* border: 1px solid red; */
+}
+
+#task-list button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 9px;
+    padding: 5px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    background-color: pink;
+    cursor: pointer;
+}
+
+input[type=checkbox]{
+    transform: scale(1.2) translateY(3px);
+}
+
+@media screen and (max-width:500px){
+    .task{
+        font-size: 15px;
+    }
+
+    .container{
+        gap: 10px;
+    }
+
+    .add{
+        gap: 5px;
+    }
+
+    .add input{
+        width: 200px;
+        height: 30px;
+        font-size: 12px;
+    }
+
+    .add button{
+        width: 50px;
+        height: 30px;
+        font-size: 12px;
+    }
+
+    #list{
+        padding: 5px;
+    }
+
+    #list #task-list{
+        gap: 5px;
+    }
+
+    #task-list button{
+        padding: 3px;
+        font-size: 5px;
+    }
+
+    
+}
